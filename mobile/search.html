@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #8c52ff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            height: 60px;
+            background: #8c52ff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            color: #fff;
+    
+            top: 0;
+            z-index: 1000;
+        }
+
+        .search-bar {
+            width: 80%;
+            max-width: 300px;
+            height: 70%;
+            margin-top: 80px;
+            border-radius: 20px;
+            margin-left: 55px;
+            overflow: hidden;
+        }
+
+        .search-bar input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            padding: 8px;
+            border-radius: inherit;
+            font-size: large;
+        }
+
+        .rectangle-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 80px 10px;
+            height: 100%;
+            
+        }
+
+        .rectangle {
+            width: 90%;
+            height: 7vh;
+            background-color: rgb(190, 146, 221);
+            margin: 10px 0;
+            border-radius: 30px;
+            font-size: 40px;
+            color: white;
+            text-align: left;
+        }
+
+        .nav {
+            width: 100%;
+            height: 8vh;
+            background: url(images/golden.png) center/cover no-repeat;
+            position: fixed;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .home,
+        .search,
+        .account {
+            width: 80%;
+            max-width: 50px;
+            max-height: 50px;
+        }
+
+        a:visited {
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+    </header>
+
+    <div class="rectangle-container">
+
+        <div class="rectangle"> <a style="text-decoration-line: none;" href="detail.html">🌲 Bos </a></div>
+
+        <div class="rectangle">🌌 Sterren</div>
+
+        <div class="rectangle">📚 Bibliotheek</div>
+
+        <div class="rectangle">🧚🏻‍♀️ Fantasie</div>
+
+        <div class="rectangle">⛈️ Storm</div>
+
+        <div class="rectangle">🛥️ Boot</div>
+
+        <div class="rectangle">❄️ Sneeuw</div>
+
+        <div class="rectangle">🏕️ Kampvuur</div>
+    </div>
+
+    <footer>
+        <div class="nav">
+            <div class="icon-class">
+                <a href="index.html">
+                    <img src="images/home.png" alt="" class="home">
+                </a>
+            </div>
+            <div class="icon-class">
+                <a href="search.html">
+                    <img src="images/search.png" alt="" class="search">
+                </a>
+            </div>
+            <div class="icon-class">
+                <a href="account.html">
+                    <img src="images/account.png" alt="" class="account">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</body>
+
+</html>
